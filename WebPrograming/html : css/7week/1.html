@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <title>6/2</title>
+        <style>
+            body {background-color: #ffffff;}
+            #container {
+                background-color: #fff;
+                width: 6000px;
+                margin: 20px auto;
+                padding: 20px;
+            }
+            div {
+                width: 200px;
+                height: 100px;
+                margin:30px;
+            }
+            #box1 {background-color: rgb(0, 77, 243);}
+            #box2 {background-color: rgb(255, 72, 0);}
+            #box3 {background-color: rgb(18,219, 0);}
+            h1 {
+        display:inline-block;
+        border:1px solid #000;
+    }
+    #padding1 {
+        padding: 20px 30px 40px 50px;
+    }
+    #padding2 {
+        padding: 20px 30px;
+    }
+    #padding3 {
+        padding: 20px;
+    }
+    * {
+            box-sizing: border-box;
+        }
+        nav ul {
+            display: inline-block;
+        }
+        nav ul li {
+            display: inline-block;
+            padding:20px;
+            margin:0 20px;
+            border:1px solid #222;
+        }
+        img {
+    float:none;
+    margin-right:40px;
+}
+#pos1 {
+    position:absolute;
+    left:50px;
+    top:50px;
+}
+#pos2 {
+    position:absolute;
+    right:100px;
+    top:100px;
+}
+#pos3 {
+    position:absolute;
+    left:100px;
+    bottom:100px
+}
+#static {
+    position:static;
+
+}
+#relative-1 {
+    position: relative;
+}
+#relative-2 {
+    position: relative;
+    left:100px;
+    top:-50px;
+
+}
+#fixed {
+    width: 100px;
+    height:100px;
+    background-color: #222;
+    position: fixed;
+    right:30px;
+    top:30px;
+
+}
+#clip-border {
+    background-clip: border-box;
+
+}
+#clip-padding {
+    background-clip: padding-box;
+}
+#clip-content {
+    background-clip: content-box;
+    padding: 10px;
+}
+repeat {
+    background-repeat: repeat;
+}
+
+
+            </style>
+
+    </head>
+    <body>
+        <div id="container">
+            <h1>레드향</h1>
+            <p>껍질에 붉은 빛이 돌아 <b>레드향</b>이라 불린다.</p>
+        </div>
+        <div id="box1"></div>
+        <div id="box2"></div>
+        <div id="box3"></div><br><br>
+        <h1>레드향</h1>
+			<h1 id="padding1">레드향</h1>
+			<h1 id="padding2">레드향</h1>
+			<h1 id="padding3">레드향</h1><br><br>
+            <nav>
+                <ul>
+                 <li>menu 1</li>
+                 <li>menu 2</li>
+                 <li>menu 3</li>
+                 <li>menu 4</li>
+                </ul>
+              </nav><br><br>
+        <br><br>
+        <img src="../images/tree.png">
+        <p>Ex et adipisicing voluptate aliqua cupidatat nulla. Laboris est sint sit aliqua enim. Aute Lorem eu sint aute sunt proident. Do culpa consectetur elit duis laboris reprehenderit incididunt nulla. Irure exercitation tempor aliqua laboris cupidatat anim in non officia aliquip excepteur fugiat labore.</p>
+        <p>Lorem ipsum reprehenderit adipisicing exercitation enim velit veniam incididunt sit consectetur elit exercitation. Commodo veniam sit quis nisi ea. Ipsum do aliqua nostrud laboris elit duis adipisicing id Lorem qui. Labore dolor ipsum enim incididunt. Velit qui cillum sunt labore incididunt duis aute Lorem nulla et. Sint commodo aute amet laboris ullamco exercitation Lorem dolore veniam ut reprehenderit incididunt. Laborum nulla eiusmod cillum irure anim aute.</p>
+        <p>Excepteur voluptate ad irure ipsum duis. Deseru </p>
+        <p id="pos1">Ex et adipisicing...</p>
+        <p id="pos2">Lorem ipsum reprehenderit...</p>
+        <p id="pos3">Excepteur voluptate...</p>
+        <p id="static">벅</p>
+        <p id="relative-1">버억</dp>
+        <p id="relative-2">버어억</p>
+        <p id="fixed">버어어억</p><br><br>
+        <br><br>
+        <div id="container">
+            <div class="desc" id="clip-border">
+              <h1>레드향</h1>
+              <p>껍질에 붉은 빛이 돌아 <b>레드향</b>이라 불린다.</p>
+              <p>레드향은 <em>한라봉과 귤을 교배</em>한 것으로<br>일반 귤보다 2~3배 크고, 과육이 붉고 통통하다.</p>
+            </div><br><br><br>
+            <div class="desc" id="clip-padding">
+              <h1>레드향</h1>
+              <p>껍질에 붉은 빛이 돌아 <b>레드향</b>이라 불린다.</p>
+              <p>레드향은 <em>한라봉과 귤을 교배</em>한 것으로<br>일반 귤보다 2~3배 크고, 과육이 붉고 통통하다.</p>
+            </div><br><br><br>
+            <div class="desc" id="clip-content">
+              <h1>레드향</h1>
+              <p>껍질에 붉은 빛이 돌아 <b>레드향</b>이라 불린다.</p>
+              <p>레드향은 <em>한라봉과 귤을 교배</em>한 것으로</p>
+              </div>
+              </div>
+    </body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <title>3/1</title>
+    </head>
+    <body>
+        <form>
+                <table border="1" align="center" width="100%">
+                    <thead>
+                    <tr>
+                        <td colspan="2" align="center" bgcolor="red"><b>회원기본정보</b></td>
+                    </tr>
+                    <tr>
+                    <td bgcolor="orange">아이디</td>
+                    <td><label><input type="text" id="userId" size="20" autofocus>4~12자의 영문 대소문자와 숫자로만 입력</label></td>
+                    </tr>
+                    <tr>
+                    <td bgcolor="yellow">비밀번호</td>
+                    <td><input type="password" id="userPw" size="20 "placeholder="4~12자의 대소문자와 숫자로 입력"></label></td>
+                    </tr>
+                    <tr>
+                    <td bgcolor="green">비밀번호확인 </td>
+                    <td><input type="password" id="userCKPw" size="20" placeholder="4~12자의 대소문자와 숫자로 입력"></label></td>
+                    </tr>
+                    <tr>
+                    <td bgcolor="blue">메일주소</td> 
+                    <td><input type="text" id="mailAdrass" size="15" autofocus> <input type="text" id="mailDomain" size="15" placeholder="@dgsw.hs.kr" readonly></td>
+                    </tr>
+                    <tr>
+                    <td bgcolor="gray">연락처</td>
+                    <td><label><input type="tel" id="phoneNumber" size="10"></label></td>
+                    </tr>
+                    <tr>
+                    <td bgcolor="red">수신여부<td><input type="checkbox" id="yes">수신<input type="checkbox" id="no">수신거부</td>
+                    </tr>
+                    <tr>
+                    <td bgcolor="violet">이름</td>
+                    <td><input type="text" id="name" size="10"></td>
+                    </tr>
+                </thead>
+                </table>
+                <table border="1" align="center" width="100%">
+                    <tr>
+                        <td bgcolor="red" colspan="6" align="center"><b>개인신상정보</b></td>
+                    </tr>
+                    <tr>
+                        <td bgcolor="orange" align="center"><b>학번</b></td>
+                        <td><input size="30" maxlength="30" type="text" name="id-2" id="id-2">예&#41; 1234</td>
+                        <td bgcolor="yellow" align="center"><b>생일</b></td>
+                        <td>
+                            <select size"2" name="year">
+                                <option value="2023">2023</option>
+                                <option value="2022">2022</option>
+                                <option value="2021">2021</option>
+                                <option value="2020">2020</option>
+                                <option value="2019">2019</option>
+                                <option value="2018">2018</option>
+                                <option value="2017">2017</option>
+                                <option value="2016">2016</option>
+                                <option value="2015">2015</option>
+                                <option value="2014">2014</option>
+                                <option value="2013">2013</option>
+                                <option value="2012">2012</option>
+                                <option value="2011">2011</option>
+                                <option value="2010">2010</option>
+                                <option value="..">..</option>
+                            </select>년
+                            <select name="month">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                            </select>월
+                            <select name="day">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="..">..</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td bgcolor="green" align="center"><b>가족수</b></td>
+                        <td><input type="number" min="1" max="10" size="30" maxlength="30" name="family" id="family"></td>
+                        <td bgcolor="blue" align="center"><b>미팅일자</b></td>
+                        <td><input type="date" id="meeting" name="meeting" min="2023-03-22" max="2023-03-31"></td>
+                    </tr>
+                    <tr>
+                        <td bgcolor="gray" align="center"><b>가입경로</b></td>
+                        <td><input type="text" name="datalist" size="30" maxlength="30" id="datalist" list="가입경로"><datalist name="data"></datalist></td>
+                        <td bgcolor="violet" align="center"><b>관심분야</b></td>
+                        <td><input type="checkbox" name="computer" id="computer" checked>컴퓨터
+                            <input type="checkbox" name="internet" id="internet">인터넷
+                            <input type="checkbox" name="travel" id="travel">여행
+                            <input type="checkbox" name="movie" id="movie">영화감상
+                            <input type="checkbox" name="music" id="music">음악감상
+                        </td>
+                    </tr>
+                    <tr>
+                        <td bgcolor="red" align="center"><b>자기소개서</b></td>
+                        <td colspan="3"><textarea name="self-introduction" id="self-introduction" cols="50" rows="5" maxlength="50"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td bgcolor="orange" align="center"><b>첨부파일</b></td>
+                        <td><input type="file" id="file" name="file"></td>
+                    </tr>
+                </table>
+                <div class="button" align="center">
+                    <input type="submit" value="회원가입" name="join" id="join">
+                    <input type="reset" value="다시입력" name="reset" id="reset">
+                    <input type="button" value="팝업창열기" name="popup" id="popup" onclick="document.location.href='./4.html'">
+                    <input type="button" value="아이디알기" name="idreset" id="idreset" onclick="alert(document.getElementById('userId').value)">
+                    <input type="button" value="메일주소로그남기기" name="maillog" id="maillog">
+                    <a href="../4.html" target="_blank"><img src="../download.jpg"></a>
+                    <input type="hidden" value="hello" id="hidden" name="hidden">
+                    <input type="button" value="완료" name="success" id="success" onclick="alert(document.getElementById('hidden').value)">
+                </div>
+        </form>
+    </body>
+</html>

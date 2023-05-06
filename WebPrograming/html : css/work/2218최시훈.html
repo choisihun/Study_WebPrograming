@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <title>이력서 작성하기</title>
+    </head>
+    <body>
+        <h1 align="center">이력서</h1><br>
+        <h1 align="center">1. 기본사항</h1><br>
+        <form>
+            <table border="1" align="center" width="95%">
+                <thead>
+                    <tr>
+                        <td rowspan="5"><img src="../"></td>
+                    </tr>
+                    <tr>
+                       <td>성명</td>
+                       <td><label>(한글) <input type="text" id="koreanNa=me"placeholder="한글이름" size="30" autofocus>  (영문)<input type="text" id="englishName" placeholder="영어이름" size="30" autofocus></label></td>
+                    </tr>
+                    <tr colspan>
+                        <td>생년월일</td>
+                        <td colspan="5"><select size"1" name="year">
+                                <option value="1977">1977</option>
+                            </select>년
+                            <select size"1" name="month">
+                                <option value="1">1</option>
+                            </select>월
+                            <select size"1" name="day">
+                                <option value="1">1</option>
+                            </select>일</td>
+                        <td>휴대전화</td>
+                        <td><input type="text" id="phoneNumber" size="30" autofocus></td>
+                    </tr>
+                     <tr>
+                        <td>e-mail</td>
+                        <td><input type="text" id="email" size="30" autofocus> <input type="text" id="mailDomain" size="15" placeholder="@dgsw.hs.kr" readonly></td>
+                     </tr>
+                     <tr>
+                        <td>주소</td>
+                        <td><input type="text" id="addrass" size="50" autofocus></td>
+                     </tr>
+                    </tr>
+
+            </thead>
+            </table>
+            <h1 align="center">2. 학력사항</h1><br>
+            <table border="1" align="center" width="100%">
+                <tr>
+                    <td bgcolor="red" colspan="2" align="center"><b>재학기간
+                    </b></td>
+                </tr>
+                <tr>
+                    <td bgcolor="orange" align="center"><b>학번</b></td>
+                    <td><input size="30" maxlength="30" type="text" name="id-2" id="id-2">예&#41; 1234</td>
+                    <td bgcolor="yellow" align="center"><b>생일</b></td>
+                    <td>
+                        <select size"2" name="year">
+                            <option value="2023">2023</option>
+                            <option value="2022">2022</option>
+                            <option value="2021">2021</option>
+                            <option value="2020">2020</option>
+                            <option value="2019">2019</option>
+                            <option value="2018">2018</option>
+                            <option value="2017">2017</option>
+                            <option value="2016">2016</option>
+                            <option value="2015">2015</option>
+                            <option value="2014">2014</option>
+                            <option value="2013">2013</option>
+                            <option value="2012">2012</option>
+                            <option value="2011">2011</option>
+                            <option value="2010">2010</option>
+                            <option value="..">..</option>
+                        </select>년
+                        <select name="month">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                        </select>월
+                        <select name="day">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="..">..</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td bgcolor="green" align="center"><b>가족수</b></td>
+                    <td><input type="number" min="1" max="10" size="30" maxlength="30" name="family" id="family"></td>
+                    <td bgcolor="blue" align="center"><b>미팅일자</b></td>
+                    <td><input type="date" id="meeting" name="meeting" min="2023-03-22" max="2023-03-31"></td>
+                </tr>
+                <tr>
+                    <td bgcolor="gray" align="center"><b>가입경로</b></td>
+                    <td><input type="text" name="datalist" size="30" maxlength="30" id="datalist" list="가입경로"><datalist name="data"></datalist></td>
+                    <td bgcolor="violet" align="center"><b>관심분야</b></td>
+                    <td><input type="checkbox" name="computer" id="computer" checked>컴퓨터
+                        <input type="checkbox" name="internet" id="internet">인터넷
+                        <input type="checkbox" name="travel" id="travel">여행
+                        <input type="checkbox" name="movie" id="movie">영화감상
+                        <input type="checkbox" name="music" id="music">음악감상
+                    </td>
+                </tr>
+                <tr>
+                    <td bgcolor="red" align="center"><b>자기소개서</b></td>
+                    <td colspan="3"><textarea name="self-introduction" id="self-introduction" cols="50" rows="5" maxlength="50"></textarea></td>
+                </tr>
+                <tr>
+                    <td bgcolor="orange" align="center"><b>첨부파일</b></td>
+                    <td><input type="file" id="file" name="file"></td>
+                </tr>
+            </table>
+            </form>
+    </body>
+</html>

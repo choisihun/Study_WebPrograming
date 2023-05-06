@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS</title>
+</head>
+
+<style>
+    body {
+        /*전체 글자 굵기*/
+        font-size: 20px;
+    }
+
+    @font-face {
+        font-family: 'NanumGothic';
+        src: url('fonts/NanumGothicRegular.eot');
+        src: url('fonts/NanumGothicRegular.eot?#iefix') format('embedded-opentype'),
+             url('fonts/NanumGothicRegular.woff') format('woff'),
+             url('fonts/NanumGothicRegular.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+        }
+
+    .wfont {
+        font-family: 'NanumGothicRegular', sans-serif;
+    }
+
+    .newFont {
+        font-size: 30px;
+    }
+
+    h1{
+        /*글꼴*/
+        /*font-family: 바탕;*/
+        /*글자 크기*/
+        font-size: 3em;
+        text-align: center;
+    }
+
+    .accent {
+        /*글자 크기*/
+        font-size: 150%;
+        /*글자 굵기*/
+        font-weight: 800;
+    }
+
+    .italic {
+        /*글자 스타일*/
+        font-style: italic;
+    }
+
+    .fruit {
+        background-color: lightblue;
+        border: 3px solid black;
+        padding: 1px;
+        margin: 1px;
+    }
+    
+    .divStyle {
+        border: 3px solid black;
+        margin: 0px;
+        width: 50%;
+        padding: 10px;
+    }
+
+    img {
+        margin: 0;
+        border: 3px solid red;
+    }
+
+    table {
+
+        caption-side: bottom;
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+    td, tr {
+        border: 1px dotted black;
+        padding: 10px;
+        text-align: center;
+    }
+    .w {
+        font-family: 'Courier monospace';
+        font-size: 14px;
+        font-weight: bolder;
+        font-style: italic;
+    }
+    .textDecoration {
+        text-align: center;
+        color: deeppink;
+    }
+    .shadow1 {
+        text-shadow: 5px 5px 10px yellow;
+        text-decoration:underline;
+        font-size: 20px;
+        font-weight: bolder;
+    }
+    .align {
+        text-align: left;
+        letter-spacing: 0.3em;
+    }
+    .book1 {
+        list-style-image: url("../images/download.jpg");
+    }
+    .book2 {
+        list-style-type: upper-roman;
+    }
+</style>
+
+<body>
+    <table>
+        <caption>선물용과 가정용 상품 구성</caption>
+        <tr>
+            <td>용도</td>
+            <td>중량</td>
+            <td>갯수</td>
+            <td>가격</td>
+        </tr>
+        <tr>
+            <td rowspan="3" class="align" class="textDecoration">선물용</td>
+            <td class="textDecoration">3kg</td>
+            <td class="textDecoration">11~16과</td>
+            <td class="textDecoration">35,000원</td>
+        </tr>
+        <tr>
+            <td  class="shadow1" class="textDecoration">5kg</td>
+            <td  class="shadow1" class="textDecoration">18~26과</td>
+            <td  class="shadow1" class="textDecoration">52,000원</td>
+        </tr><script src=""></script>
+        <tr>
+            <td class="textDecoration" class="w">10kg</td>
+            <td class="textDecoration" class="w">28~36과</td>
+            <td class="textDecoration" class="w">75,000원</td>
+        </tr>
+        <tr>
+            <td rowspan="3" class="align" >가정용</td>
+            <td>3kg</td>
+            <td>11~16과</td>
+            <td>35,000원</td>
+        </tr>
+        <tr>
+            <td class="shadow1">5kg</td>
+            <td class="shadow1">18~26과</td>
+            <td class="shadow1">47,000원</td>
+        </tr>
+        <tr>
+            <td>10kg</td>
+            <td>28~36과</td>
+            <td>65,000원</td>
+        </tr>
+    </table>
+    <h1>도서시리즈</h1>
+    <ul class="book1">
+        <li>Do it! 시리즈</li>
+        <li>첫 코딩 시리즈</li>
+        <li>된다 시리즈</li>
+    </ul>
+    <ol class="book2">
+        <li>Do it! 시리즈</li>
+        <li>첫 코딩 시리즈</li>
+        <li>된다 시리즈</li>
+    </ol>
+</body>
+
+</html>
