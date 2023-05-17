@@ -31,15 +31,31 @@
 // document.write("반환된 배열; ", newStudy + "<br>")
 // document.write("변경된 배열 : ", + study)
 
+const item = document.querySelector('#item');
+const result = document.querySelector('#result');
 const addItem = document.querySelector('#addItem');
-const inputText = document.querySelector('#item');
-const tripResult = document.querySelector('#trip');
-let arrItems = [];
+const removeItem = document.querySelector('#addItem');
+
+let arrList = new Array();
+let i = 0;
+
+let btnRemove = "#remove_" + i;
+const removeItem_ = document.querySelector(btnRemove);
+
 const onAddItem = () => {
-    arrItems.push(inputText.value);
-    console.log(arrItems);
-    inputText.value = "";
+    arrList = item.value;
+    result.innerHTML += item.value + "<input type=button id=remove_" + i + "value=삭제><br>"
+
+
+
+    item.value = "";
+    item.focus();
+    i++;
 }
 
-//tripResult.innerHTML = `추가한 준비물 <input type="button" value=삭제 id="rmItem_"${i} <br>`
+const onRemoveItem = (i) => {
+    
+}
+
 addItem.addEventListener('click', onAddItem);
+removeItem_.addEventListener('click', onRemoveItem(i));
