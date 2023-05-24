@@ -31,6 +31,10 @@
 // document.write("반환된 배열; ", newStudy + "<br>")
 // document.write("변경된 배열 : ", + study)
 
+
+//tripResult.innerHTML = `추가한 준비물 <input type="button" value=삭제 id="rmItem_"${i} <br>`
+
+
 const item = document.querySelector('#item');
 const result = document.querySelector('#result');
 const addItem = document.querySelector('#addItem');
@@ -43,18 +47,26 @@ let btnRemove = "#remove_" + i;
 const removeItem_ = document.querySelector(btnRemove);
 
 const onAddItem = () => {
-    arrList = item.value;
-    result.innerHTML += item.value + "<input type=button id=remove_" + i + "value=삭제><br>"
+    // arrItems.push(inputText.value);
+    // console.log(arrItems);
+    // result.innerHTML += item.value + "<input type=button id=remove_" + i + "value=삭제><br>"
+    // item.value = "";
+    // item.focus();
+    // i++;
 
-
-
-    item.value = "";
+    arrList = item .value;
+    inputText.value = "";
     item.focus();
-    i++;
+    printScr;
+}
+const printScr = () => {
+    화면출력하기
 }
 
+
 const onRemoveItem = (i) => {
-    
+    arrList.splice(i,1);
+    printScr();
 }
 
 addItem.addEventListener('click', onAddItem);
