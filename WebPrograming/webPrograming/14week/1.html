@@ -1,12 +1,21 @@
 <!DOCTYPE html>
-<html>
-    <body>
-        <p>1번째 참가자</p>
-        <p>제시어:</p>
-        <div id="word"></div>
-        <input type="text" name="input">
-        <button onclick="onClickButton">제출</button>
-    </body>
-    <script src="../14week/2.js">
-    </script>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>끝말잇기</title>
+</head>
+<body>
+    <div id = "mem"></div>
+    <span id = "order">1</span>
+    <span>번째 참가자</span> <br>
+    <span>제시어 :</span>
+    <span id = "proWord"></span><br>
+    <input type = "text" id = "input">
+    <button type = "submit" id = "submitBtn">입력</button><br>
+    <span>현재까지 나온 단어 모음 : </span> 
+    <span id = "wordList"></span>
+    
+    <script src = "2.js"></script>
+</body>
 </html>
